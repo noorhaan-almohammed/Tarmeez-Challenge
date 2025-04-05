@@ -1,18 +1,17 @@
-function Title() {
-  return <h2>This is the post title</h2>;
+function Title( prop ) {
+  return <h2>{prop.postTitle}</h2>;
 }
 
-function Body() {
-  return <p>This is the post body</p>;
+function Body({ postBody }) {
+  return <p>{postBody}</p>;
 }
 
-export default function Post() {
+export default function Post({ title="no title", body="no body" }) {
   return (
     <div className={"post"}>
-      <Title />
+      <Title postTitle={title} />
       <hr />
-      <Body />
+      <Body postBody={body} />
     </div>
   );
 }
-
