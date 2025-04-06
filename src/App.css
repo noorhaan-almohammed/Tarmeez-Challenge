@@ -59,7 +59,8 @@ hr{
   color: white;
   border-radius: 10px;
   box-shadow: 1px 1px 5px 1px #3a0f37;
-  padding: 2%;
+  padding: 3%;
+  width: 100%;
   border: 1px solid #6f1a6a;
 }
 .tag-button:hover{

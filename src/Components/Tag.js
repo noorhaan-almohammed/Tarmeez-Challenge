@@ -1,5 +1,15 @@
-export default function CusttomTag(props){
-    return (
-          <button className="tag-button">{props.children}</button>
-      );
+export default function CusttomTag(props) {
+  return (
+    <>
+    {/* ternary operator if condetion */}
+      {props.children == null ? (
+        <></>
+      ) : (
+        <button className="tag-button">
+          <h3>{props.title}</h3>
+          {props.children}
+        </button>
+      )}
+    </>
+  );
 }
